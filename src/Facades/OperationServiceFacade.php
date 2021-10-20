@@ -11,6 +11,6 @@ class OperationServiceFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return Laragrad\Largent\Services\OperationService::class;
+        return \Laragrad\Largent\Services\OperationService::class;
     }
 }

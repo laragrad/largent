@@ -11,6 +11,6 @@ class EntryServiceFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return Laragrad\Largent\Services\EntryService::class;
+        return \Laragrad\Largent\Services\EntryService::class;
     }
 }
