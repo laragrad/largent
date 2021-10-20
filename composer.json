@@ -27,7 +27,7 @@
 	"extra" : {
 		"laravel" : {
 			"providers" : [
-				"Laragrad\\Largent\\LargentServiceProvider"
+				"Laragrad\\Largent\\Providers\\LargentServiceProvider"
 			]
 		}
 	},

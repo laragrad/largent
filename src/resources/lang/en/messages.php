@@ -18,7 +18,7 @@ return [
         ],
 
         'types' => [
-            // TODO
+            //
         ],
 
         'compentstion_kinds' => [
