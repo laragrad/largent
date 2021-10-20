@@ -30,15 +30,14 @@ class CreateLargentEntryTable extends Migration
             // debit part of entry
             $table->string('db_account_code', 20);
             $table->string('db_entity_type', 50);
-
-            $table->uuid('db_entity_id');
+            $table->$entityKeyType('db_entity_id');
             $table->decimal('db_sum', 15, 2);
             $table->string('db_currency_code', 3);
 
             // credit part of entry
             $table->string('cr_account_code', 20);
             $table->string('cr_entity_type', 50);
-            $table->uuid('cr_entity_id');
+            $table->$entityKeyType('cr_entity_id');
             $table->decimal('cr_sum', 15, 2);
             $table->string('cr_currency_code', 3);
 

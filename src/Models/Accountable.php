@@ -1,6 +1,6 @@
 <?php
 
-namespace Laragrad\Largent\Models\Concerns;
+namespace Laragrad\Largent\Models;
 
 use Arr, Config;
 use Laragrad\Largent\Exceptions\LargentException;
