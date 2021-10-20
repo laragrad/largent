@@ -30,8 +30,8 @@
 				"Laragrad\\Largent\\Providers\\LargentServiceProvider"
 			],
 			"aliases" : {
-				"LargentOperation" : "Laragrad\\Largent\\Services\\OperationService",
-				"LargentEntry" : "Laragrad\\Largent\\Services\\EntryService"
+				"LargentOperation" : "Laragrad\\Largent\\Facades\\OperationServiceFacade",
+				"LargentEntry" : "Laragrad\\Largent\\Facades\\EntryServiceFacade"
 			}
 		}
 	},
