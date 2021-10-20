@@ -28,7 +28,11 @@
 		"laravel" : {
 			"providers" : [
 				"Laragrad\\Largent\\Providers\\LargentServiceProvider"
-			]
+			],
+			"aliases" : {
+				"LargentOperation" : "Laragrad\\Largent\\Services\\OperationService",
+				"LargentEntry" : "Laragrad\\Largent\\Services\\EntryService"
+			}
 		}
 	},
 	"minimum-stability" : "dev"
