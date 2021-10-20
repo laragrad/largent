@@ -1,0 +1,35 @@
+{
+	"name" : "laragrad/largent",
+	"description" : "Transfers money between entities",
+	"keywords" : [
+		"laravel",
+		"money",
+		"accounting",
+		"billing"
+	],
+	"type" : "package",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Ilya Khondozhko",
+			"email" : "dev@laragrad.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.2.0",
+		"laragrad/eloquent-model-userstamps" : ">=1.1",
+		"laragrad/uuid" : ">=1.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Laragrad\\Largent\\" : "src"
+		}
+	},
+	"extra" : {
+		"laravel" : {
+			"providers" : [
+				"Laragrad\\Largent\\LargentServiceProvider"
+			]
+		}
+	},
+	"minimum-stability" : "dev"
+}
