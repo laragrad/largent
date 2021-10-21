@@ -16,7 +16,6 @@ class LargentServiceProvider extends ServiceProvider
     {
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang/', 'laragrad/largent');
         $this->mergeConfigFrom(__DIR__ . '/../resources/config/largent.php', 'laragrad.largent');
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         // lang
         $this->publishes([
