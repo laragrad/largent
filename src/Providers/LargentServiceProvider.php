@@ -30,7 +30,7 @@ class LargentServiceProvider extends ServiceProvider
         // migrations
         $this->publishes([
             __DIR__ . '/../database/migrations/' => database_path('migrations')
-        ], 'largent');
+        ], 'largent-migrations');
     }
 
     /**

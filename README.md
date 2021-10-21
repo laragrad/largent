@@ -2,18 +2,25 @@
 
 ## Installation
 
-1. Install a package
+Install a package
 
 	composer require laragarad/largent
 	
-2. Publish resources and migrations
+Publish translation and config resources
 	
 	php artisan vendor:publish --tag=largent
+	
+If you need, you can to publish migrations, but it is not required.
 
-3. If your accountable entties use keys of type 'uuid' then change config key 'laragrad.largent.entity_key_type' to 'uuid'
+	php artisan vendor:publish --tag=largent-migrations
 
-4. Migrate tables
+If your accountable entities use **uuid** keys then change config key **laragrad.largent.entity_key_type** value to **uuid**
+
+Run table migrations
 
 	php artisan migrate
-	
+
+## Configurating and operation handler creating
+
+...
 
