@@ -5,8 +5,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Laragrad\Support\Userstamps;
 use Laragrad\Largent\Models\Entry;
+use Config;
 
-class CreateLargentEntryTable extends Migration
+class CreateLargentEntriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +18,11 @@ class CreateLargentEntryTable extends Migration
     {
         Schema::create('largent_entries', function (Blueprint $table) {
 
-            $entityKeyType = Config::get('laragrad.largent.entity_ketype', 'int');
+            if (Config::get('laragrad.largent.entity_ketype', 'int') == 'uuid') {
+                $entityKeyType = 'uuid';
+            } else {
+                $entityKeyType = 'bigInteger';
+            }
 
             $table->id('id');
 

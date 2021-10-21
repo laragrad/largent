@@ -15,23 +15,23 @@ class LargentServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang/', 'laragrad/largent');
-        $this->mergeConfigFrom(__DIR__ . '/../config/largent.php', 'laragrad.largent');
+        $this->mergeConfigFrom(__DIR__ . '/../resources/config/largent.php', 'laragrad.largent');
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         // lang
         $this->publishes([
             __DIR__ . '/../resources/lang/' => resource_path('lang/vendor/laragrad/largent')
-        ], 'lang');
+        ], 'largent');
 
         // config
         $this->publishes([
-            __DIR__ . '/../config/largent.php' => config_path('laragrad/largent.php')
-        ], 'config');
+            __DIR__ . '/../resources/config/largent.php' => config_path('laragrad/largent.php')
+        ], 'largent');
 
         // migrations
         $this->publishes([
             __DIR__ . '/../database/migrations/' => database_path('migrations')
-        ], 'migrations');
+        ], 'largent');
     }
 
     /**

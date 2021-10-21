@@ -11,11 +11,14 @@ use Laragrad\Largent\Models\AccountableEntityInterface;
 return [
 
     /**
-     * Type of entities keys through project
+     * Type of key type used for all models
+     * that implements Largent\Models\AccountableEntityInterface
+     *
+     * 'int' or 'uuid'
      *
      * @string
      */
-    'entity_key_type' => 'bigInteger',
+    'entity_key_type' => 'int',
 
     /**
      * Default currency code
